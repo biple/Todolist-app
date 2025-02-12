@@ -1,0 +1,144 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  background: url("images/cattu.jpeg") no-repeat center center fixed;
+  background-size: cover; /* Ensures the image covers the entire screen */
+  background-position: center;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  height: 100vh;
+  margin: 0;
+  padding-top: 50px;
+}
+
+.container {
+  background: rgba(255, 255, 255, 0.9); /* Slight transparency */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: 600px;
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 15px;
+}
+
+/* Input & Button Styles */
+input {
+  width: 70%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  padding: 8px 12px;
+  margin-left: 5px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background-color: #218838;
+}
+
+/* List Styles */
+ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 15px;
+}
+
+li {
+  background: #f9f9f9;
+  padding: 10px;
+  margin: 5px 0;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background 0.3s;
+  cursor: pointer;
+}
+
+li:hover {
+  background: #eaeaea;
+}
+
+.completed {
+  text-decoration: line-through;
+  color: gray;
+}
+
+/* Delete Button */
+.delete-btn {
+  background-color: #dc3545;
+  border: none;
+  padding: 5px;
+  color: white;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+.delete-btn:hover {
+  background-color: #c82333;
+}
+
+/* Table Styles */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th, td {
+  padding: 12px;
+  border: 1px solid #ddd;
+  text-align: center;
+}
+
+th {
+  background-color: #f4f4f4;
+}
+
+.status {
+  cursor: pointer;
+  padding: 5px;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.status.completed {
+  color: green;
+}
+
+.status.pending {
+  color: orange;
+}
+
+/* Adjustments for Table Layout */
+@media (max-width: 500px) {
+  .container {
+      width: 100%;
+      padding: 15px;
+  }
+
+  input {
+      width: 60%;
+  }
+
+  button {
+      padding: 6px 10px;
+  }
+
+  table {
+      font-size: 14px;
+  }
+}
